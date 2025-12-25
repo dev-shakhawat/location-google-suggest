@@ -104,7 +104,7 @@ const LocationBox = () => {
         }
       };
 
-      // যদি Google Maps API লোড হয়
+      // if  Google Maps API Load
       if (
         typeof window !== "undefined" &&
         window.google &&
@@ -115,7 +115,7 @@ const LocationBox = () => {
         return;
       }
 
-      // নাহলে স্ক্রিপ্ট যোগ করুন
+      // else add script
       if (
         typeof window !== "undefined" &&
         !document.getElementById("gmaps-places")
